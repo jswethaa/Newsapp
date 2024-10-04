@@ -1,0 +1,159 @@
+.about-container {
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 20px;
+  background: linear-gradient(135deg, #9ad5e9f8, #1f8ae29d);
+
+ 
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease; 
+}
+
+.about-container h1 {
+  text-align: center;
+  color: linear-gradient(135deg, #5e65c8f0, #1cc7ee);
+  margin-bottom: 20px;
+  animation: slideIn 0.5s ease; 
+}
+
+.about-container p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #5e0202;
+  margin: 10px 0;
+  transition: color 0.3s; 
+}
+
+.about-container p:hover {
+  color: #04305d; 
+}
+
+.about-container h2 {
+  color: #090818; 
+  margin-top: 30px;
+  margin-bottom: 10px;
+  animation: slideIn 0.5s ease; 
+}
+
+.about-container ul {
+  list-style-type: disc; 
+  margin-left: 20px; 
+}
+
+.about-container li {
+  margin: 5px 0; 
+  transition: transform 0.2s; 
+}
+
+.about-container li:hover {
+  transform: translateX(5px); 
+}
+
+.about-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #9b59b6, #f39c12);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  text-decoration: none;
+}
+
+.about-button:hover {
+  background: linear-gradient(135deg, #f39c12, #9b59b6);
+  transform: translateY(-3px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.features {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 15px; 
+}
+.features li {
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d); 
+  border-radius: 8px; 
+  list-style-type: none; 
+  padding: 15px; 
+  margin: 10px 0; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+ 
+
+}
+
+.features li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); 
+  cursor: pointer; 
+}
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem; 
+  }
+
+  p {
+    font-size: 0.9rem; 
+  }
+
+  .about-container {
+    padding: 10px; 
+  }
+  .features li{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .features li {
+    font-size: 0.8rem; 
+  }
+}
+
+
+@media screen and  (max-width: 1024px) {
+  h1 {
+    font-size: 2.2rem; 
+  }
+
+  h2 {
+    font-size: 1.6rem; 
+  }
+
+  p {
+    font-size: 1rem; 
+  }
+}

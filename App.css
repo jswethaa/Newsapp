@@ -1,0 +1,73 @@
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+
+.searchBar {
+  display: flex;
+  align-items: center;
+}
+
+.searchBar input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+.searchBar button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #feb47b;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.searchBar button:hover {
+  transform: scale(1.1);
+  background-color: #ff7e5f;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #feb47b;
+}
+.nav-links li{
+  color: linear-gradient(135deg, #2798d0, #FFC3A0);
+  background-color:rgb(62, 237, 237) ;
+  border-radius: 100px;
+}
+
+
+
